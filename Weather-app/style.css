@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-color: #000000;
+    --second-color: #ffffff;
+    --background-color: #96D9D6;
+    --erro-color: #ff0000;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: var(--background-color);
+}
+
+#weather-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    width: 80%;
+
+    gap: 5vh;
+
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#form-Weather{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+#city-input{
+    width: 80%;
+    height: 50px;
+
+    background-color: var(--second-color);
+
+    padding: 20px;
+
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#city-input:focus{
+    outline: none;
+    background-color: #6890F0;
+    color: var(--second-color);
+    transition: 0.5s;
+}
+
+#city-input::placeholder{
+    color: var(--primary-color);
+}
+
+#city-input:focus::placeholder{
+    color: var(--second-color);
+}
+
+#btn-weather{
+    width: 15%;
+    height: 50px;
+
+    background-color: var(--second-color);
+
+    font-size: 2em;
+
+    border: none;
+    border-radius: 50px;
+
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#btn-weather:hover{
+    background-color: #6890F0;
+    color: var(--second-color);
+    transition: 0.5s;
+}
+
+.card{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    background-image: linear-gradient(to bottom right, #96D9D6,#6890F0, #735797, #6F35FC);
+    gap: 40px;
+
+    width: 80%;
+
+    border: solid 0px var(--primary-color);
+    border-radius: 30px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.display-city{
+    font-size: 4em;
+}
+
+.display-temperature{
+    font-size: 2em;
+}
+
+.display-humidity{
+    font-size: 2em;
+}
+
+.display-description{
+    font-size: 2em;
+}
+
+.display-icon{
+    font-size: 6em;
+}
+
+.display-error{
+    font-size: 2em;
+    color: var(--erro-color);
+}
