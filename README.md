@@ -1,6 +1,8 @@
 # HTML-CSS-JavaScript
 
-## Sobre
+<br>
+
+## 📝 Sobre
 
 Este repositório contém pequenos projetos desenvolvidos
 para estudo e prática utilizando linguagens HTML, CSS e JavaScript.
