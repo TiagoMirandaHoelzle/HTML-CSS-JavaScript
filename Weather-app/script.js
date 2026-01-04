@@ -9,7 +9,7 @@ const cityInput = document.getElementById("city-input");
 const btn = document.getElementById("btn-weather");
 
 //API info
-const api_key = "f33e35b2762492a05cabd2f89a04851f";
+const api_key = "Sua chave da API";
 const units = "metric";
 const lang = "pt_br";
 
@@ -135,4 +135,5 @@ function removePrevious(){
     if(removePreviousError){
         removePreviousError.remove();
     }
+
 }
