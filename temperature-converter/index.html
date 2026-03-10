@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Temperatura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="conversor-de-temperatura">
+
+        <form action="" method="get">
+
+            <h2>Conversor de Temperatura</h2>
+
+            <div id="temperaturas">
+                <input type="text" name="" class="input-temperatura" placeholder="Digite uma temperatura" id="valor-temperatura" value="0">
+                <label for=""> = </label>
+                <input type="text" name="" class="input-temperatura" readonly id="resultado">
+            </div>
+
+            <p id="mensagem"></p>
+
+            <div class="opc-conversao">
+                <input type="radio" name="opc" id="c_para_f">
+                <label for="">Celcius para Fahrenheit</label>
+            </div>
+
+            <div class="opc-conversao">
+                <input type="radio" name="opc" id="c_para_k">
+                <label for="">Celcius para Kelvin</label>
+            </div>
+
+            <div class="opc-conversao">
+                <input type="radio" name="opc" id="f_para_c">
+                <label for="">Fahrenheit para Celcius</label>
+            </div>
+
+            <div class="opc-conversao">
+                <input type="radio" name="opc" id="f_para_k">
+                <label for="">Fahrenheit para Kelvin</label>
+            </div>
+
+            <div class="opc-conversao">
+                <input type="radio" name="opc" id="k_para_c">
+                <label for="">Kelvin para Celcius</label>
+            </div>
+
+            <div class="opc-conversao">
+                <input type="radio" name="opc" id="k_para_f">
+                <label for="">Kelvin para Fahrenheit</label>
+            </div>
+
+            <input type="button" value="Converter" id="btn-converter">
+            
+        </form>
+
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
